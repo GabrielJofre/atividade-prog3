@@ -1,0 +1,2 @@
+INSERT INTO tb_post(name,email,genero,date,type) VALUES ('Rex','gabriel@email.com','male','2021-05-10','Dog');
+INSERT INTO tb_post(name,email,genero,date,type) VALUES ('Layla','josue@email.com','famale','2021-05-10','Cat');
