@@ -29,7 +29,7 @@ public class PostDTO implements Serializable {
 		name = entity.getName();
 		email = entity.getEmail();
 		genero = entity.getGenero();
-		type = entity.getGenero();
+		type = entity.getType();
 	}
 
 	public Long getId() {
