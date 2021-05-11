@@ -7,6 +7,3 @@
    Vídeo demonstrativo da atividade ->
    <a href="https://youtu.be/OCUeEZ77luw" rel="nofollow"><img src="https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/yt-icon.png" alt="" style="max-width:100%;"></a>
 </h3>
-<h3>
-<a href="https://atividade-prog3.herokuapp.com"> Heroku </a>
-</h3>
