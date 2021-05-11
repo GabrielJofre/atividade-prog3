@@ -1,7 +1,5 @@
 package com.github.gabrieljofre.petly.entities;
 
-import java.time.LocalDate;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,19 +16,17 @@ public class Post {
 	private String name;
 	private String email;
 	private String genero;
-	private LocalDate date;
 	private String type;
 	
 	public Post() {
 	}
 
-	public Post(Long id, String name, String email, String genero, LocalDate date, String type) {
+	public Post(Long id, String name, String email, String genero, String type) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.genero = genero;
-		this.date = date;
 		this.type = type;
 	}
 
@@ -64,14 +60,6 @@ public class Post {
 
 	public void setGenero(String genero) {
 		this.genero = genero;
-	}
-
-	public LocalDate getDate() {
-		return date;
-	}
-
-	public void setDate(LocalDate date) {
-		this.date = date;
 	}
 
 	public String getType() {

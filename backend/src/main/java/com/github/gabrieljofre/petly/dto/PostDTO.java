@@ -1,7 +1,6 @@
 package com.github.gabrieljofre.petly.dto;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 import com.github.gabrieljofre.petly.entities.Post;
 
@@ -12,18 +11,16 @@ public class PostDTO implements Serializable {
 	private String name;
 	private String email;
 	private String genero;
-	private LocalDate date;
 	private String type;
 
 	public PostDTO() {
 	}
 
-	public PostDTO(Long id, String name, String email, String genero, LocalDate date, String type) {
+	public PostDTO(Long id, String name, String email, String genero, String type) {
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.genero = genero;
-		this.date = date;
 		this.type = type;
 	}
 
@@ -32,7 +29,6 @@ public class PostDTO implements Serializable {
 		name = entity.getName();
 		email = entity.getEmail();
 		genero = entity.getGenero();
-		date = entity.getDate();
 		type = entity.getGenero();
 	}
 
@@ -66,14 +62,6 @@ public class PostDTO implements Serializable {
 
 	public void setGenero(String genero) {
 		this.genero = genero;
-	}
-
-	public LocalDate getDate() {
-		return date;
-	}
-
-	public void setDate(LocalDate date) {
-		this.date = date;
 	}
 
 	public String getType() {
