@@ -20,4 +20,14 @@ public class PostService {
 		List<Post> result = repository.findAll();
 		return result.stream().map(x -> new PostDTO(x)).collect(Collectors.toList());
 	}
+
+	public PostDTO getPost(Long id) {
+		if (repository.findById(id).isPresent()) {
+			Post result = repository.findById(id).get();
+			return new PostDTO(result.getId(), result.getName(), result.getEmail(), result.getGenero(),
+					result.getDate(), result.getType());
+		} else {
+			return null;
+		}
+	}
 }
